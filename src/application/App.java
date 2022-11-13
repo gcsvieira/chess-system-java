@@ -1,7 +1,5 @@
 package application;
 
-import boardgame.Board;
-import boardgame.BoardException;
 import chess.ChessMatch;
 
 public class App {
