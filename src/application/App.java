@@ -39,9 +39,16 @@ public class App {
                     captured.add(capturedPiece);
 
                 if (chessMatch.getPromoted() != null) {
-                    System.out.print("Enter piece for promotion (B/N/R/Q): ");
-                    String type = scanner.nextLine();
+                    String type = null;
+                    do {
+                        if (type != null)
+                            System.out.print("Invalid command! ");
+
+                        System.out.print("Enter piece for promotion (B/N/R/Q): ");
+                        type = scanner.nextLine().toUpperCase();
+                    } while (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q"));
                     chessMatch.replacePromotedPiece(type);
+
                 }
 
             } catch (ChessException e) {
