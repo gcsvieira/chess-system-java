@@ -10,6 +10,7 @@ This project features a chess match rendered on console application (on tests th
 
 Each piece has a logic to demonstrate on the array which position it can move, and the possible moving target position should also have its background color changed when you select a source piece.
 
+You can also do special moves, like en passant, promotion, or the rook move.
 Chess rules are also respected. Turns are registered and also the console displays which player, the one commanding white or black pieces, it is waiting a move from.
 
 ![](readme-assets/2OScuYFiiJ.gif)
