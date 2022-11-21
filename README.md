@@ -1,18 +1,21 @@
-## Getting Started
+## Chess System on Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This Chess System is a chess game created on console application on Java language when learning oop in a course.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+This project features a chess match rendered on console application (on tests the Git Bash console was used, but when using PowerShell the results were the same). The board is represented using a bidimensional array, and programming logic was used to create chess pieces on that board, along with methods to interact with those pieces.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+![](readme-assets/SGIkZAFcP2.gif)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Each piece has a logic to demonstrate on the array which position it can move, and the possible moving target position should also have its background color changed when you select a source piece.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Chess rules are also respected. Turns are registered and also the console displays which player, the one commanding white or black pieces, it is waiting a move from.
 
-## Dependency Management
+![](readme-assets/2OScuYFiiJ.gif)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to play
+
+You can interact with those pieces solely using the board coordinates, represented by a letter and a number. So, for example, when performing a move, you select a source piece, and a target location, to execute the command.
+
+![](readme-assets/5msPJLYwTs.gif)
